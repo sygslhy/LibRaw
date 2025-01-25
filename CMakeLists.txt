@@ -188,6 +188,7 @@ MACRO_BOOL_TO_01(ZLIB_FOUND LIBRAW_USE_DNGDEFLATECODEC)
 # JPEG library check
 find_package(JPEG)
 if(JPEG_FOUND)
+    get_target_property(JPEG_VERSION JPEG::JPEG JPEG_LIB_VERSION)
     if (${JPEG_VERSION} LESS 80)
         set(JPEG8_FOUND FALSE)
     else()
