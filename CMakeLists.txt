@@ -82,7 +82,7 @@ project(libraw VERSION ${RAW_LIB_VERSION_STRING} LANGUAGES CXX)
 # Project Options
 option(BUILD_SHARED_LIBS           "Build library as shared library                 (default=ON)"                 ON)
 option(ENABLE_OPENMP               "Build library with OpenMP support               (default=ON)"                 ON)
-option(ENABLE_LCMS                 "Build library with LCMS support                 (default=ON)"                 ON)
+option(ENABLE_LCMS                 "Build library with LCMS support                 (default=ON)"                 OFF)
 option(ENABLE_JASPER               "Build library with libjasper support            (default=ON)"                 ON)
 option(ENABLE_EXAMPLES             "Build library with sample command-line programs (default=ON)"    ${MASTER_PROJECT})
 option(ENABLE_RAWSPEED             "Build library with extra RawSpeed codec support (default=OFF)"                OFF)
